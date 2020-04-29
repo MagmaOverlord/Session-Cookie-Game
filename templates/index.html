@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Flask Template</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+		<title>Clicker Game</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	</head>
 	<body>
-        <h1>It's Time To Game</h1>
-		<script src="/static/index.js"></script>
+        <h1 id="score">Score: 0</h1>
+        <div id="game">
+            <img id="object" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_Corporation_logo_%28vector%29.svg/1200px-Target_Corporation_logo_%28vector%29.svg.png" width="50" height="50"/>
+        </div>
+        <a href="/settings">Settings</a>
 	</body>
+    <script src="/static/index.js"></script>
 </html>
