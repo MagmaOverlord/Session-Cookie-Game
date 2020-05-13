@@ -11,12 +11,17 @@
 	</head>
 	<body>
         <div class="container">
-            <a href="/game">Go to game</a>
+        <h2>Signup</h2>
+    </div>
+        <form action="/" method = "post" class="container form-group">
+            Username: <input type="text" name="signupUsername" class="form-control" placeholder="Username"/>
             <p></p>
-            <a href="signup">Sign Up</a>
+            E-mail: <input type="text" name="signupEmail" class="form-control"placeholder="example@example.com"/>
             <p></p>
-            <a href="login">Log In</a>
-        </div>
-	</body>
+            Password: <input type="passowrd" name="signupPassword" class="form-control" placeholder="Password"/>
+            <p></p>
+            Confirm Password <input type="text" name="signupPasswordConfirm" class="form-control" placeholder="Confirm Password"/>
+        </form>
+    </body>
     <script src="/static/index.js"></script>
 </html>

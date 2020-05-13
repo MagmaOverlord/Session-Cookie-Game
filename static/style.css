@@ -3,6 +3,10 @@ body {
     background-color: ivory;
 }
 
+.container{
+    text-align: center;
+}
+
 #game {
     height: 50vh;
     width: 50vw;

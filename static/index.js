@@ -10,6 +10,11 @@ var height = $("#game").height();
 
 var start = $("#object").position();
 
+$(window).resize(function() {
+    var width = $("#game").width();
+    var height = $("#game").height();
+});
+
 setInterval(function() {
     var newTop = (Math.random()*height) + start.top;
     var newLeft = (Math.random()*width) + start.left/2;
@@ -19,3 +24,14 @@ setInterval(function() {
         left: newLeft
     })
 }, 1000);
+
+$("#object").click(function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/score');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+            $("#score").html("Score: "+xhr.response);
+        }
+    }
+    xhr.send();
+});

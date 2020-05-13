@@ -10,13 +10,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body>
-        <div class="container">
-            <a href="/game">Go to game</a>
+    <div class="container">
+        <h2>Login</h2>
+    </div>
+        <form action="/" method = "post" class="container form-group">
+            Username: <input type="text" name="loginUsername" class="form-control" placeholder="Username"/>
             <p></p>
-            <a href="signup">Sign Up</a>
-            <p></p>
-            <a href="login">Log In</a>
-        </div>
-	</body>
+            Password: <input type="password" name="loginPassword" class="form-control" placeholder="Password"/>
+        </form>
+    </body>
     <script src="/static/index.js"></script>
 </html>
